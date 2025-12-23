@@ -39,4 +39,4 @@ setInterval(() => {
 }, 50);
 
 const port = process.env.PORT || 8080;
-http.listen(8080, () => console.log(`Server running on ${port}`))
+http.listen(port, () => console.log(`Server running on ${port}`))
