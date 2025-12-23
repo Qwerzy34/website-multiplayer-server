@@ -42,6 +42,5 @@ setInterval(() => {
     io.emit('updatePositions', users);
 }, 50);
 
-const port = process.env.PORT;
-//const port = 8080;
+const port = process.env.PORT || 8080;
 http.listen(port, () => console.log(`Server running on ${port}`))
